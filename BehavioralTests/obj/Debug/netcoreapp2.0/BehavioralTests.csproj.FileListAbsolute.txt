@@ -1,0 +1,16 @@
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\Behavioral.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.csprojResolveAssemblyReference.cache
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.csproj.CoreCompileInputs.cache
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.AssemblyInfoInputs.cache
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.AssemblyInfo.cs
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\BehavioralTests.deps.json
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\BehavioralTests.runtimeconfig.json
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\BehavioralTests.runtimeconfig.dev.json
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\BehavioralTests.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\BehavioralTests.pdb
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\bin\Debug\netcoreapp2.0\Behavioral.pdb
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.dll
+C:\Users\Giuliane\project\DesignPatternStudy\BehavioralTests\obj\Debug\netcoreapp2.0\BehavioralTests.pdb

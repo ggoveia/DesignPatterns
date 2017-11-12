@@ -1,0 +1,11 @@
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\bin\Debug\netcoreapp2.0\Behavioral.deps.json
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\bin\Debug\netcoreapp2.0\Behavioral.runtimeconfig.json
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\bin\Debug\netcoreapp2.0\Behavioral.runtimeconfig.dev.json
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\bin\Debug\netcoreapp2.0\Behavioral.dll
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\bin\Debug\netcoreapp2.0\Behavioral.pdb
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.csprojResolveAssemblyReference.cache
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.csproj.CoreCompileInputs.cache
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.AssemblyInfoInputs.cache
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.AssemblyInfo.cs
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.dll
+C:\Users\Giuliane\project\DesignPatternStudy\DesignPatternStudy\obj\Debug\netcoreapp2.0\Behavioral.pdb
