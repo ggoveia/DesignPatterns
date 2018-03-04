@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreationalTests", "Creation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Behavioral", "Behavioral\Behavioral.csproj", "{550F3774-AE34-4250-95FA-F3A877D47DFB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{30C85FA8-FBA9-4142-9499-1F28CA9117EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9815A0BB-5C63-4652-9185-0CC7E67A7264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{628853A6-3773-491F-AD83-A2AA97F7B9AF} = {9815A0BB-5C63-4652-9185-0CC7E67A7264}
+		{F4D43475-D45D-4E1E-AF39-26CCAAF1EB8D} = {30C85FA8-FBA9-4142-9499-1F28CA9117EA}
+		{B1C190FA-9238-40EB-8FC0-E2540FC03FD6} = {9815A0BB-5C63-4652-9185-0CC7E67A7264}
+		{550F3774-AE34-4250-95FA-F3A877D47DFB} = {30C85FA8-FBA9-4142-9499-1F28CA9117EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF743363-73C8-42F0-BAD2-24BEB7D8FB44}
