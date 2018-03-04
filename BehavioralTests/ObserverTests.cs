@@ -16,12 +16,17 @@ namespace BehavioralTests
 
         Mock<IDisplayObserver> _mockedSubscriber;
 
+        Mock<IDisplayObserver> _mockedsub1;
+        Mock<IDisplayObserver> _mockedsub2;
+        Mock<IDisplayObserver> _mockedsub3;
+        
 
         public ObserverTests()
         {
 
             _sudWheaterStation = new WeatherStationPublisher();
             _allSubscriberStub = GetListOfSubscribers();
+
             _mockedSubscriber = new Mock<IDisplayObserver>();
 
         }
@@ -65,25 +70,28 @@ namespace BehavioralTests
         {
             InsertNotifiers();
 
-            _mockedSubscriber.Setup(sub => sub.Update()).Verifiable();
-
+            _mockedsub1.Setup(sub => sub.Update()).Verifiable();
+            _mockedsub2.Setup(sub => sub.Update()).Verifiable();
+            _mockedsub3.Setup(sub => sub.Update()).Verifiable();
+            
             _sudWheaterStation.NotifySubscribers();
 
-            _mockedSubscriber.Verify(sub => sub.Update(), Times.AtLeastOnce);
+            _mockedsub1.Verify(sub => sub.Update());
+            _mockedsub2.Verify(sub => sub.Update());
+            _mockedsub3.Verify(sub => sub.Update());
         }
 
         private List<IDisplayObserver> GetListOfSubscribers()
         {
-
-            var sub1 = new Mock<IDisplayObserver>();
-            var sub2 = new Mock<IDisplayObserver>();
-            var sub3 = new Mock<IDisplayObserver>();
+            _mockedsub1 = new Mock<IDisplayObserver>();
+            _mockedsub2 = new Mock<IDisplayObserver>();
+            _mockedsub3 = new Mock<IDisplayObserver>();
 
             return new List<IDisplayObserver> {
 
-                sub1.Object,
-                sub2.Object,
-                sub3.Object
+                _mockedsub1.Object,
+                _mockedsub2.Object,
+                _mockedsub3.Object
             };
         }
 
@@ -92,6 +100,7 @@ namespace BehavioralTests
             _allSubscriberStub.ForEach(sub => _sudWheaterStation.AddSubscriber(sub)); ;
 
         }
+        
     }
 
 

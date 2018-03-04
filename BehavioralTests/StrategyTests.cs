@@ -1,6 +1,5 @@
 using Behavioral.Strategy;
 using Moq;
-using System;
 using Xunit;
 
 namespace BehavioralTests
@@ -14,7 +13,7 @@ namespace BehavioralTests
 
             var result = rarCompression.Compress();
 
-            Assert.Equal(result, "RAR Compression done successfully");
+            Assert.Equal("RAR Compression done successfully", result);
            
         }
 
@@ -25,7 +24,7 @@ namespace BehavioralTests
 
             var result = zipCompresstion.Compress();
 
-            Assert.Equal(result, "ZIP Compression done successfully");
+            Assert.Equal("ZIP Compression done successfully", result);
         }
 
         [Fact]

@@ -1634,11 +1634,12 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "xunit/2.2.0": {
+      "xunit/2.3.1": {
         "type": "package",
         "dependencies": {
-          "xunit.assert": "[2.2.0]",
-          "xunit.core": "[2.2.0]"
+          "xunit.analyzers": "0.7.0",
+          "xunit.assert": "[2.3.1]",
+          "xunit.core": "[2.3.1]"
         }
       },
       "xunit.abstractions/2.0.1": {
@@ -1653,10 +1654,13 @@
           "lib/netstandard1.0/xunit.abstractions.dll": {}
         }
       },
-      "xunit.assert/2.2.0": {
+      "xunit.analyzers/0.7.0": {
+        "type": "package"
+      },
+      "xunit.assert/2.3.1": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0"
+          "NETStandard.Library": "1.6.1"
         },
         "compile": {
           "lib/netstandard1.1/xunit.assert.dll": {}
@@ -1665,20 +1669,25 @@
           "lib/netstandard1.1/xunit.assert.dll": {}
         }
       },
-      "xunit.core/2.2.0": {
+      "xunit.core/2.3.1": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.2.0]",
-          "xunit.extensibility.execution": "[2.2.0]"
+          "xunit.extensibility.core": "[2.3.1]",
+          "xunit.extensibility.execution": "[2.3.1]"
         },
         "build": {
-          "build/netstandard1.0/_._": {}
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.2.0": {
+      "xunit.extensibility.core/2.3.1": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0",
+          "NETStandard.Library": "1.6.1",
           "xunit.abstractions": "2.0.1"
         },
         "compile": {
@@ -1688,11 +1697,11 @@
           "lib/netstandard1.1/xunit.core.dll": {}
         }
       },
-      "xunit.extensibility.execution/2.2.0": {
+      "xunit.extensibility.execution/2.3.1": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.0",
-          "xunit.extensibility.core": "[2.2.0]"
+          "NETStandard.Library": "1.6.1",
+          "xunit.extensibility.core": "[2.3.1]"
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
@@ -5677,12 +5686,12 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "xunit/2.2.0": {
-      "sha512": "DoB9o+x3erv1DGP+pSvrIC1pWg+23LeeG8nOGVldoF+qeWNqQbabc5jLfUWW4zLOsNZfvgHcmJIKuRcZMgoV+w==",
+    "xunit/2.3.1": {
+      "sha512": "IWux0xXfZ/bC7SgooK5rmW5KwCwFg9GFslmPxA7+pJsT+2SRyhOfOgNUXDd7B09UN4f6kogRT2TqNi6gbWEspA==",
       "type": "package",
-      "path": "xunit/2.2.0",
+      "path": "xunit/2.3.1",
       "files": [
-        "xunit.2.2.0.nupkg.sha512",
+        "xunit.2.3.1.nupkg.sha512",
         "xunit.nuspec"
       ]
     },
@@ -5699,53 +5708,67 @@
         "xunit.abstractions.nuspec"
       ]
     },
-    "xunit.assert/2.2.0": {
-      "sha512": "OZ1HADp3tv48wK+mPxdOr4kYPn3Y1RACYCWkX0IogKIyZ8fwLeLspVk9KdHfhqXGITnTvlMcOw6PmdRAwrUreQ==",
+    "xunit.analyzers/0.7.0": {
+      "sha512": "pEjPJ/pd+r9blGBJ9bXg961phkAiCl4k2DwxwWGEZyYC/7Tb1xJ1az0H18uGANX7zFIkvE5ZO1eZZ4vU7gny7w==",
       "type": "package",
-      "path": "xunit.assert/2.2.0",
+      "path": "xunit.analyzers/0.7.0",
+      "files": [
+        "analyzers/dotnet/cs/xunit.analyzers.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "xunit.analyzers.0.7.0.nupkg.sha512",
+        "xunit.analyzers.nuspec"
+      ]
+    },
+    "xunit.assert/2.3.1": {
+      "sha512": "+mUMp3aJOS0ag3qJ2tUhVa930KhwjyypxXT4Ab8lQozEQN8/xgkblQnYs0woIWpr2NbzEOxsZojytl9NBVRKxg==",
+      "type": "package",
+      "path": "xunit.assert/2.3.1",
       "files": [
         "lib/netstandard1.1/xunit.assert.dll",
         "lib/netstandard1.1/xunit.assert.xml",
-        "xunit.assert.2.2.0.nupkg.sha512",
+        "xunit.assert.2.3.1.nupkg.sha512",
         "xunit.assert.nuspec"
       ]
     },
-    "xunit.core/2.2.0": {
-      "sha512": "wuGOHofSt4sR/ros6N6S8FI2L9uuP5YsbcxM2kXpcRplMoY1pSgfEZaIRZm3NqDL/JJ/FHEksTEYkvxpc9H4Rw==",
+    "xunit.core/2.3.1": {
+      "sha512": "LOG4qOFuVQcjYcIuZbKeo03Uvng3lSb2gZJU9ANljwCf+PTd//iAMZS5qcJQZrjhndc4aOUlJGQy5wa0+/iZ6w==",
       "type": "package",
-      "path": "xunit.core/2.2.0",
+      "path": "xunit.core/2.3.1",
       "files": [
-        "build/_desktop/xunit.execution.desktop.dll",
-        "build/netstandard1.0/_._",
-        "build/uap10.0/xunit.core.props",
-        "xunit.core.2.2.0.nupkg.sha512",
+        "build/xunit.core.props",
+        "build/xunit.core.targets",
+        "build/xunit.execution.desktop.dll",
+        "buildMultiTargeting/xunit.core.props",
+        "buildMultiTargeting/xunit.core.targets",
+        "xunit.core.2.3.1.nupkg.sha512",
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.2.0": {
-      "sha512": "2bT3sG8obWbRm45NewcV+Sr2K1whj88LnjQT7szJx1DcydgKR86ggV5rIZ5NccCWo2ctZMRb0QMYttVrhrG9Gw==",
+    "xunit.extensibility.core/2.3.1": {
+      "sha512": "1mgYqXeQfU+7zcSRW8/5Uf1jVZ5+5WELmi+BuRTh0xu/x0Q0gK0SuR3FLUF4BSd8sfZzvrRUrhWj3ltpyFxhrg==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.2.0",
+      "path": "xunit.extensibility.core/2.3.1",
       "files": [
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.dll.tdnet",
         "lib/netstandard1.1/xunit.core.xml",
         "lib/netstandard1.1/xunit.runner.tdnet.dll",
         "lib/netstandard1.1/xunit.runner.utility.net452.dll",
-        "xunit.extensibility.core.2.2.0.nupkg.sha512",
+        "xunit.extensibility.core.2.3.1.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.2.0": {
-      "sha512": "4gjTrSUd/F6/pdsMsf+a1f1tcaUQnr59JvZQulmF8VwQbCh34ifie3iqriYyKyLmTQDUEJ/ZTPeZEDh0pxpTLA==",
+    "xunit.extensibility.execution/2.3.1": {
+      "sha512": "i8xrHfKC5dyBWQ7I15FePzm0m8KNToBsTleCCQbOQuXRPZIvupd4nnfaCPeJuKHHe7yJ8JGtWxjIgw0ow/cMhg==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.2.0",
+      "path": "xunit.extensibility.execution/2.3.1",
       "files": [
         "lib/net452/xunit.execution.desktop.dll",
         "lib/net452/xunit.execution.desktop.xml",
         "lib/netstandard1.1/xunit.execution.dotnet.dll",
         "lib/netstandard1.1/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.2.0.nupkg.sha512",
+        "xunit.extensibility.execution.2.3.1.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     },
@@ -5807,8 +5830,8 @@
     },
     "Behavioral/1.0.0": {
       "type": "project",
-      "path": "../DesignPatternStudy/Behavioral.csproj",
-      "msbuildProject": "../DesignPatternStudy/Behavioral.csproj"
+      "path": "../Behavioral/Behavioral.csproj",
+      "msbuildProject": "../Behavioral/Behavioral.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5816,7 +5839,7 @@
       "Behavioral >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
       "Microsoft.NETCore.App >= 2.0.0",
-      "xunit >= 2.2.0",
+      "xunit >= 2.3.1",
       "xunit.runner.console >= 2.3.1",
       "xunit.runner.visualstudio >= 2.2.0"
     ]
@@ -5854,8 +5877,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Giuliane\\project\\DesignPatternStudy\\DesignPatternStudy\\Behavioral.csproj": {
-              "projectPath": "C:\\Users\\Giuliane\\project\\DesignPatternStudy\\DesignPatternStudy\\Behavioral.csproj"
+            "C:\\Users\\Giuliane\\project\\DesignPatternStudy\\Behavioral\\Behavioral.csproj": {
+              "projectPath": "C:\\Users\\Giuliane\\project\\DesignPatternStudy\\Behavioral\\Behavioral.csproj"
             }
           }
         }
@@ -5880,7 +5903,7 @@
           },
           "xunit": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "2.3.1"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
